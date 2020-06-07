@@ -1,3 +1,10 @@
+          ========================================
+          || Name   = Mehdi Ali                 ||
+          || RollNO = WM5318                    ||
+          || Email  = yarpamehdi2000@gmail.com  ||
+          ========================================
+
+
 =====================================================
                     Chapter 1
 =====================================================
@@ -149,5 +156,105 @@ alert("▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬")
 
 =====================================================================================================
                                             Chapter 3
+=====================================================================================================
+
+1. Declare a variable called age & assign to it your age. Show
+your age in an alert box.
+code
+--------
+var age = 15
+alert("i am " + age + " " +"years old")
+----------------------------------------------------------------------------------------------------------
+
+2. Declare & initialize a variable to keep track of how many
+times a visitor has visited a web page. Show his/her
+number of visits on your web page. For example: “You
+have visited this site N times”.
+----------------------------------------------------------------------------------------------------------
+
+3. Declare a variable called birthYear & assign to it your
+birth year. Show the following message in your browser:
+code
+--------
+var birthYear = (+ 2000)
+document.write("my birth year is" + " "+ birthYear)
+---------------------------------------------------------------------------------------------------------
+
+4. A visitor visits an online clothing store
+www.xyzClothing.com . Write a script to store in variables
+the following information:
+a. Visitor’s name
+b. Product title
+c. Quantity i.e. how many products a visitor wants to
+order
+Show the following message in your browser: “John
+Doe ordered 5 T-shirt(s) on XYZ Clothing store”.
+
+code
+-------
+var visitor = "Jhone Doe"
+var product = "t-shirt"
+var Quantity = "5"
+document.write(visitor + " " + "ordered" +" " + Quantity +" " + product + " " + " on XYZ Clothing Store")
+-----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+=====================================================================================================
+                                            Chapter 4
+=====================================================================================================
+
+1. Declare 3 variables in one statement.
+code
+------
+
+var a=1,
+    b=2,
+    c=3;
+document.write(a+"<br>"+b+"<br>"+c)
+
+2. Declare 5 legal & 5 illegal variable names.
+code
+-----------
+Legal variables:
+
+        var firstname;
+        var first_name;
+        var first-name;
+        var firstName;
+        var firstname99;
+
+Illegal variables:
+
+ 	     var first name;
+           var 99firstname;
+           var firstname_;
+           var first+name;
+           var first < name;
+----------------------------------------------------------------------------------------------
+
+
+
+3. Display this in your browser
+a) A heading stating “Rules for naming JS variables”
+code
+------
+var a="variable contain only numbers,$,and _"
+b) Variable names can only contain _letters_____, __$____,
+___underscore___ and __string____.
+c) Variables must begin with a __aplhbat____, __$____ or
+__letter___. For example $name, _name or name
+----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+=====================================================================================================
+                                            Chapter 5
 =====================================================================================================
 
