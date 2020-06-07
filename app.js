@@ -1,0 +1,153 @@
+=====================================================
+                    Chapter 1
+=====================================================
+1. Write a script to greet your website visitor using JS alert
+box.
+
+CODE
+=====
+ alert("welcome on our website")
+--------------------------------------------------------------------
+
+2. Write a script to display following message on your web page :
+
+CODE
+====
+alert("Error! Enter invalid Password")
+-------------------------------------------------------------------------
+
+
+3. Write a script to display following message on your web page: (Hint : Use line break)
+  // CODE
+  // ====
+   alert("welcom to Js Land... \nHappy Coding" )
+   ---------------------------------------------------------------------------------------
+
+
+
+4. Write a script to display following messages in sequence:
+CODE
+====
+   alert("welcome to Js land....")
+   alert("Happy Codding!")
+----------------------------------------------------------------------------------------------
+
+
+5. Generate the following message through browser’s developer console:
+CODE
+====
+alert("Hello! I can run JS through my web browser's console")
+console.log(alert)
+---------------------------------------------------------------------------------------------------------
+
+
+6. Make use of alerts in your new/existing HTML & CSS project.
+CODE
+==== 
+
+
+
+7. Practice placement of <script></script> element in following sections of your project in exercise 6:
+ CODE
+====
+
+c. Body (inside your page’s HTML)
+-----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+=====================================================================================================
+                                            Chapter 2
+=====================================================================================================
+
+
+1. Declare a variable called username.
+CODE
+====
+var username="mehdi";
+alert(username)
+-----------------------------------------------------------------------------------------------------------
+
+
+
+2. Declare a variable called myName & assign to it a string that represents your Full Name.
+CODE
+====
+var myName = prompt("Enter Your Full Name")
+alert(myName)
+-----------------------------------------------------------------------------------------------------------
+
+
+
+3. Write script to
+a) Declare a JS variable, titled message.
+
+b) Assign “Hello World” to variable message
+
+var message = "Hello World"
+
+c) Display the message in alert box.
+
+alert(message)
+--------------------------------------------------------------------------------------------------------------
+
+
+4. Write a script to save student’s bio data in JS variables and show the data in alert boxes.
+CODE 
+----
+var Name = prompt("Enter name")
+var Age = prompt("Enter Age")
+var Certified = prompt("Your certificate")
+alert(Name)
+alert(Age)
+alert(Certified)
+--------------------------------------------------------------------------------------------------------------
+
+
+
+5. Write a script to display the following alert using one JS variable:
+code
+-----
+var pizza = "PIZZA\nPIZZ\nPIZ\nPI\nP"
+alert(pizza)
+----------------------------------------------------------------------------------------------------------
+
+
+
+6. Declare a variable called email and assign to it a string that
+represents your Email Address(e.g. example@example.com).
+Show the blow mentioned message in an alert box.(Hint: use
+string concatenation)
+code
+-----
+var email = "yarpamehdi2000@gmail.com"
+alert("my Email Address is " + email)
+----------------------------------------------------------------------------------------------------------
+
+
+7. Declare a variable called book & give it the value “A
+smarter way to learn JavaScript”. Display the following
+message in an alert box:
+var Book = "I am try to learn from the Book A smarter way to learn JavaScript"
+alert(Book)
+----------------------------------------------------------------------------------------------------------
+
+
+
+8. Write a script to display this in browser through JS
+
+document.write('Yah! i can write HTML content through JavaScript')
+----------------------------------------------------------------------------------------------------------
+alert("▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬")
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+=====================================================================================================
+                                            Chapter 3
+=====================================================================================================
+
