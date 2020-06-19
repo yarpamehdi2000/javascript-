@@ -644,17 +644,518 @@ else{
        var percentage_of_subject_2 = (+Obtain_marks2)/(+Total_Marks2)*100
        var percentage_of_subject_3 = (+Obtain_marks3)/(+Total_Marks3)*100
 
-    document.write(subject1 + " " + Total_Marks1 + " " + Obtain_marks1 + " " + percentage_of_subject_1 + "%" + '<br>')
-    document.write(subject2 + " " + Total_Marks2 + " " + Obtain_marks2 + " " + percentage_of_subject_2 + "%" + '<br>')
-    document.write(subject3 + " " + Total_Marks3 + " " + Obtain_marks3 + " " + percentage_of_subject_3 + "%" + '<br>')
+    document.write(subject1 + " &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;" + Total_Marks1 + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + Obtain_marks1 + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + percentage_of_subject_1 + "%" + '<br>')
+    document.write(subject2 + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + Total_Marks2 + "&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + Obtain_marks2 + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + percentage_of_subject_2 + "%" + '<br>')
+    document.write(subject3 + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + Total_Marks3 + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + Obtain_marks3 + "&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + percentage_of_subject_3 + "%" + '<br>')
       var Total_marks = (+Total_Marks1) + (+Total_Marks2) + (+Total_Marks1),
           Obtain_Marks = (+Obtain_marks1) + (+Obtain_marks2) + (+Obtain_marks3), 
           Percentage = (+ Obtain_Marks)/(+Total_marks)*100
-      document.write(Total_marks + "  "  + Obtain_Marks + "   " + Percentage)
+          Percentage = Percentage.toFixed(2)
+      document.write('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + Total_marks + " &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"  + Obtain_Marks + "  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; " + Percentage)
     
 
 --------------------------------------------------------------------------------------------------
 
+
+
+
+
+
+
+
+
+
+
+
+
 =====================================================================================================
                                             Chapter 9-11
 =====================================================================================================
+
+
+
+
+1.  Write a program to take “city” name as input from user. If
+    user enters “Karachi”, welcome the user like this:
+    “Welcome to city of lights”
+
+
+
+var city = prompt('Enter your city name')
+    city = city.toLowerCase()
+
+if(city === "karachi"){
+   alert('“Welcome to city of lights”')
+}
+else{
+   alert('Enter correct city Name')
+}
+--------------------------------------------------------------------------------------------------
+
+
+
+2. Write a program to take “gender” as input from user. If the
+   user is male, give the message: Good Morning Sir. If the
+   user is female, give the message: Good Morning Ma’am.
+
+
+
+var gender = prompt('Enter your Gender')
+    gender = gender.toLowerCase()
+
+    if(gender ==="male"){
+       alert("Good Morning Sir.")
+    }
+    else if(gender === "female"){
+       alert("Good Morning Ma'am")
+    }
+    else{
+       alert('your are other')
+    }
+
+--------------------------------------------------------------------------------------------------
+
+
+3. Write a program to take input color of road traffic signal
+   from the user & show the message according to this table:
+
+
+var signal = prompt("Enter Traffic Light Color")
+    signal = signal.toLowerCase()
+    if(signal === "red"){
+       alert('Must Stop')
+    }
+    else if(signal === "yellow"){
+       alert('Ready To Move')
+    }
+    else if(signal === 'Green'){
+       alert('Move Now')
+    }
+    else{
+       alert('Enter red or yellow or green ')
+    }
+
+--------------------------------------------------------------------------------------------------
+
+4. Write a program to take input remaining fuel in car (in
+   litres) from user. If the current fuel is less than 0.25litres,
+   show the message “Please refill the fuel in your car”
+
+var fuel =prompt('Enter your remaining fuel')
+    if(fuel < 0.25){
+         alert('“Please refill the fuel in your car”')
+    }
+    else{
+       alert('you have fuel')
+    }
+
+
+
+--------------------------------------------------------------------------------------------------
+5. Run this script, & check whether alert message would be
+   displayed or not. Record the outputs.
+
+
+ a. 
+var a = 4;
+if (++a === 5){
+alert("given condition for variable a is true");
+}
+Yes It is true.
+
+b. 
+var b = 82;
+if (b++ === 83){
+alert("given condition for variable b is true");
+}
+This is False
+
+c.
+ var c = 12;
+if (c++ === 13){
+alert("condition 1 is true");
+}
+condition 1 is false
+if (c === 13){
+alert("condition 2 is true");
+}
+condition 2 is True
+if (++c < 14){
+alert("condition 3 is true");
+}
+condition 3 is False
+if(c === 14){
+alert("condition 4 is true");
+}
+condition 4 is True
+
+d. 
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost){
+alert("The cost equals");
+}
+this is True
+
+e. 
+if (true){
+   alert("True");
+   }
+   if (false){
+   alert("False");
+   }
+
+f. 
+if("car" < "cat"){
+   alert("car is smaller than cat");
+   }
+   Yes
+   
+--------------------------------------------------------------------------------------------------
+
+6. Write a program to take input the marks obtained in three
+   subjects & total marks. Compute & show the resulting
+   percentage on your page. Take percentage & compute
+   grade as per following table:
+
+
+document.write("<b>Marks Sheet</b>" + "<br>") 
+var Obtain_marks1 = prompt("Enter  subject 1 marks ")
+var Obtain_marks2 = prompt("Enter  subject 2 marks ")
+var Obtain_marks3 = prompt("Enter  subject 3 marks ")
+var Total_Marks = prompt('Enter total marks')
+
+
+var Total_obtain_marks = (+Obtain_marks1) + (+ Obtain_marks2) + (+Obtain_marks3) 
+document.write('Total Marks : ' + Total_Marks +'<br>')
+document.write('Obtain Marks : ' + Total_obtain_marks+'<br>')
+
+var Percentage = (Total_obtain_marks/Total_Marks)*100
+    Percentage = Percentage.toFixed(2)
+    document.write('Percentage : ' + Percentage + ' %'+'<br>')
+
+    if(Percentage >=80){
+        document.write('Grade : A+<br>Remarks : Excellent')
+    }
+    else if(Percentage >=70){
+        document.write('Grade : A<br>Remarks : Good')
+    }
+    else if(Percentage >=60){
+        document.write('Grade : B<br>Remarks : You Need To Improve')
+    }
+    else if(Percentage <60){
+        document.write('Grade : Fail<br>Remarks : Sorry')
+    }
+    else if(Percentage > 100){
+        alert('Enter correct marks')
+    }
+
+
+--------------------------------------------------------------------------------------------------
+
+
+7. Guess game:
+   Store a secret number (ranging from 1 to 10) in a variable.
+   Prompt user to guess the secret number.
+   a. If user guesses the same number, show “Bingo! Correct
+   answer”.
+   b. If the guessed number +1 is the secret number, show
+   “Close enough to the correct answer”.
+
+
+var secret = 3
+var secretn = prompt("Enter a Number between 1 to 10")
+
+if(secretn === 3){
+    alert("“Bingo! Correct answer”.")
+}
+else{
+       alert('“Close enough to the correct answer”')
+}
+
+--------------------------------------------------------------------------------------------------
+
+8. Write a program to check whether the given number is
+   divisible by 3. Show the message to the user if the number
+   is divisible by 3.
+
+var   num =parseInt(prompt("Enter the number"))
+if(num%3==0 ){
+    alert('Number is divisible by 3')
+}
+else{
+    alert("it is not divisible by 3")
+}
+
+
+
+--------------------------------------------------------------------------------------------------
+
+
+9. Write a program that checks whether the given input is an
+   even number or an odd number
+
+var num = prompt("enter a number")
+
+if(num%2==0){
+    alert("it is even number")
+}
+else{
+    alert('it is odd number')
+}
+
+
+--------------------------------------------------------------------------------------------------
+
+
+10. Write a program that takes temperature as input and
+    shows a message based on following criteria
+    a. T > 40 then “It is too hot outside.”
+    b. T > 30 then “The Weather today is Normal.”
+    c. T > 20 then “Today’s Weather is cool.”
+    d. T > 10 then “OMG! Today’s weather is so Cool.”
+
+var temp = prompt('enter a temperature')
+    if(temp>40){
+        alert('it is too hot outside')
+        }
+    else if(temperature>30){
+        alert('The Weather today is normal')
+    }
+    else if(temperature>20){
+        alert('Today’s Weather is cool.')
+    }
+    else if(temperature>10){
+        alert('OMG! Today’s weather is so Cool.')
+    }
+    else{
+        alert('enter temperature')
+    }
+
+
+--------------------------------------------------------------------------------------------------
+
+
+
+11. Write a program to create a calculator for +,-,*, / & %
+    using if statements. Take the following input:
+    a. First number
+    b. Second number
+    c. Operation (+, -, *, /, %)
+    Compute & show the calculated result to user.
+
+
+var firstnumber = prompt('enter first number')
+var Operation = prompt('select any operation like + - * / %')
+var secondnumber = prompt('enter second number')
+if(Operation === "+"){
+    alert((+firstnumber)+(+secondnumber))
+}
+if(Operation === "-"){
+    alert((+firstnumber)-(+secondnumber))
+}
+if(Operation === "*"){
+    alert((+firstnumber)*(+secondnumber))
+}
+if(Operation === "/"){
+    alert((+firstnumber)/(+secondnumber))
+}
+if(Operation === "%"){
+    alert((+firstnumber)%(+secondnumber))
+}
+--------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+=====================================================================================================
+                                            Chapter 12-13
+=====================================================================================================
+
+
+1.   Write a program that takes a character (number or string)
+     in a variable & checks whether the given input is a
+     number, uppercase letter or lower case letter. (Hint: ASCII
+     codes:- A=65, Z=90, a=97, z=122).
+
+var num = prompt("Enter a any character")
+   
+   if(num >=32 && num <=47)
+   {
+       alert("its a symbol")
+   }
+   if(num >=48 && num <=57)
+   {
+       alert("its a Number")
+   }
+   if(num >=58&& num <=64)
+   {
+       alert("its a Operation")
+   }
+   if(num >=65&& num <=90)
+   {
+       alert("its a UpperCase")
+   }
+   if(num >=91&& num <=96)
+   {
+       alert("its a character")
+   }
+   if(num >=97&& num <=122)
+   {
+       alert("its a LowerCase")
+   }
+
+--------------------------------------------------------------------------------------------------
+
+2. Write a JavaScript program that accept two integers and
+   display the larger. Also show if the two integers are equal.
+
+var num1 = prompt('Enter first number')
+var num2= prompt('Enter second number')
+if((+num1)>(+num2)){
+    alert('The larger number of ' + num1 +" and " + num2 +" is " +num1)
+}
+else if((+num2)>(+num1)){
+    alert('The larger number of ' + num1 +" and " + num2 +" is " +num2)
+}
+else{
+    alert("Boths are equal")
+}
+
+
+--------------------------------------------------------------------------------------------------
+
+3. Write a program that takes input a number from user &
+   state whether the number is positive, negative or zero.
+
+var num1 = parseInt(prompt("Enter a number"))
+if(num1>0)
+{
+    alert("it is positive")
+}
+else if(num1<0){
+    alert('it is negative')
+}
+
+--------------------------------------------------------------------------------------------------
+4. Write a program that takes a character (i.e. string of
+    length 1) and returns true if it is a vowel, false otherwise
+    
+
+
+    function isVowel(argument){
+
+        
+        var argument = argument.toLowerCase();
+    
+        var vowels = (['a', 'e', 'i', 'o', 'u']);
+    
+        for (var i = 0; i <= vowels.length; i++){
+            if (argument != vowels[i]) {
+                continue;
+            }
+            return true;
+        }
+        return false;
+    }
+--------------------------------------------------------------------------------------------------
+
+
+
+5. Write a program that
+   a. Store correct password in a JS variable.
+   b. Asks user to enter his/her password
+   c. Validate the two passwords:
+   i. Check if user has entered password. If not, then
+   give message “ Please enter your password”
+   ii. Check if both passwords are same. If they are
+   same, show message “Correct! The password you
+   entered matches the original password”. Show
+   “Incorrect password” otherwise.
+
+
+var password = 12345
+var user = Number(prompt('Enter password'))
+if(user ===""){
+    alert('Please enter your password')
+}
+else if(user === password){
+    alert('Correct! The password youentered matches the original password')
+}
+else{
+    alert('Incorrect password')
+}
+
+--------------------------------------------------------------------------------------------------
+
+
+6. This if/else statement does not work. Try to fix it:
+   var greeting;
+   var hour = 13;
+   if (hour < 18) {
+   greeting = "Good day";
+   else
+   greeting = "Good evening";
+   }
+
+
+var greeting;
+   var hour = 13;
+   if (hour < 18) {
+   alert(greeting = "Good day")
+   }
+   else{
+        alert(greeting = "Good evening")
+   }
+
+--------------------------------------------------------------------------------------------------
+
+
+7. Write a program that takes time as input from user in 24
+   hours clock format like: 1900 = 7pm. Implement the
+   following case using if, else & else if statements
+
+
+
+var time = parseInt(prompt('Enter time'))
+
+if(time>=0000 && time<1200){
+    alert('Good Morning')
+}
+else if(time >=1200&& time<1700){
+    alert('Good AfterNoon')
+}
+else if(time>=1700&&time<2100){
+    alert("Good Evenning")
+}
+else if(time>=2100&&time<2359){
+    alert('Good Night')
+}
+else{
+    alert('Enter Correct time')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================================================================
+                                            Chapter 14-16
+=====================================================================================================
+
+
+
