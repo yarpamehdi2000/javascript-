@@ -1159,3 +1159,210 @@ else{
 
 
 
+1. Declare an empty array using JS literal notation to store
+   student names in future.
+
+
+var student = [];
+   student[0] = "Mehdi",
+   student[1] ="ali"
+   document.write(student)
+
+--------------------------------------------------------------------------------------------------
+
+
+2. Declare an empty array using JS object notation to store
+   student names in future.
+
+
+var myarry= new Array();
+
+
+--------------------------------------------------------------------------------------------------
+
+
+3. Declare and initialize a strings array.
+
+
+var array = ['mehdi','ali','mastan','adnan','zulfiqar']
+
+document.write(array)
+
+--------------------------------------------------------------------------------------------------
+
+4. Declare and initialize a numbers array.
+
+var arry = [1,2,3,4,56,7,5]
+document.write(arry)
+
+--------------------------------------------------------------------------------------------------
+
+5. Declare and initialize a boolean array.
+
+var myArr = [];
+var value = 2;
+for(var i = 0; i < value; i++) {
+   myArr.push(false);
+}
+alert(myArr);
+
+--------------------------------------------------------------------------------------------------
+
+6. Declare and initialize a mixed array.
+
+var array = [1,'mehdi' , 56 ,"hello pakistan"]
+ document.write(array)
+
+--------------------------------------------------------------------------------------------------
+
+7. Declare and Initialize an array and store available
+   education qualifications in Pakistan (e.g. SSC, HSC, BCS,
+   BS, BCOM, MS, M. Phil., PhD). Show the listed
+   qualifications in your browser like:
+
+document.write('<b>Qualifications</b>'+"<br>")
+
+var qualifications = ["1) SSC","2) HSC","3) BCS","4) BS","5) BCOM","6) MS","7) M.PHIL","8) PHD"]
+for(i=0;i<qualifications.length;i++)
+document.write(qualifications[i]+"<br>")
+
+--------------------------------------------------------------------------------------------------
+
+8. Write a program to store 3 student names in an array.Take
+   another array to store score of these three students.
+   Assume that total marks are 500 for each student, display
+   the scores & percentages of students like:
+
+
+var studentname = ['Mehdi Ali','Mastan ali' ,'Adnan karim']
+var score = [320,230,480]
+document.write('Score of ' + studentname[0] + " Is " + score[0] + ' . ' + "Percentage : " + (score[0]/500)*100 + "%" + "<br>")
+document.write('Score of ' + studentname[1] + " Is " + score[1] + ' . ' + "Percentage : " + (score[1]/500)*100 + "%" + "<br>")
+document.write('Score of ' + studentname[2] + " Is " + score[2] + ' . ' + "Percentage : " + (score[2]/500)*100 + "%" + "<br>")
+
+
+--------------------------------------------------------------------------------------------------
+
+
+9. Initialize an array with color names. Display the array
+   elements in your browser.
+   a. Ask the user what color he/she wants to add to the
+   beginning & add that color to the beginning of the array.
+   Display the updated array in your browser.
+   b. Ask the user what color he/she wants to add to the end
+   & add that color to the end of the array. Display the
+   updated array in your browser.
+   c. Add two more color to the beginning of the array.
+   Display the updated array in your browser.
+   d. Delete the first color in the array. Display the updated
+   array in your browser.
+   e. Delete the last color in the array. Display the updated
+   array in your browser.
+   f. Ask the user at which index he/she wants to add a color
+   & color name. Then add the color to desired
+   position/index. . Display the updated array in your
+   browser.
+   g. Ask the user at which index he/she wants to delete
+   color(s) & how many colors he/she wants to delete. Then
+   remove the same number of color(s) from user-defined
+   position/index. . Display the updated array in your
+   browser.
+
+
+var  color = ['Red' ,'Blue','Green','Yellow']
+document.write(color + "<br>")
+color.unshift('White')
+document.write(color+ "<br>")
+color.push('Black')
+document.write(color+"<br>")
+color.unshift('pink','purpule')
+document.write(color+ "<br>")
+color.shift()
+document.write(color+"<br>")
+color.pop()
+document.write(color+"<br>")
+color.splice(3,0,'Black','White')
+document.write(color+"<br>")
+color.splice(3,2,"")
+document.write(color+"<br>")
+
+--------------------------------------------------------------------------------------------------
+
+10. Write a program to store student scores in an array &
+    sort the array in ascending order using Array’s sort
+    method.
+
+var array = [320,230,480,120]
+document.write('Score of Students : '+array+"<br>")
+array.sort()
+document.write('Ordered Score of Students: ' +array)
+
+--------------------------------------------------------------------------------------------------
+
+
+11. Write a program to initialize an array with city names.
+    Copy 3 array elements from cities array to selectedCities
+    array
+document.write('Cities list:'+"<br>")
+var array = ['karachi','lahore','islamabad','peshawer','quetta']
+document.write(array+'<br>')
+document.write('Selected Cities list:' +'<br>')
+array = array.slice(2,4)
+document.write(array)
+
+--------------------------------------------------------------------------------------------------
+
+12. Write a program to create a single string from the
+    below mentioned array:
+    var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+    (Use array’s join method)
+
+document.write('<b>Array:</b>'+'<br>')
+var array = ['This','is','cat']
+document.write(array+"<br>")
+array = array.join(" ")
+document.write('<b>String:</b>'+'<br>')
+document.write(array)
+
+--------------------------------------------------------------------------------------------------
+
+13. Create a new array. Store values one by one in such a way
+    that you can access the values in the order in which they
+    were stored. (FIFO-First In First Out)
+
+var colors = new Array();                //create an array
+var count = colors.push("A", "B");       //push two items
+console.log(count);  //2
+console.log(colors);/*  w  w w .j ava2s .c o  m*/
+
+count = colors.push("black");           //push another item on
+console.log(count);  //3
+console.log(colors);
+
+var item = colors.shift();              //get the first item
+console.log(item);                            
+console.log(colors.length);  //2
+console.log(colors);
+
+document.write('<b>Devices :</b>'+"<br>")
+var array = ['keyboard','mouse','printer','monitor']
+document.write(array)
+array=array.shift()
+for(var i = 0;i<array.length;i++){
+    
+    document.write(array[i].length-1)
+}
+
+--------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+=====================================================================================================
+                                            Chapter 17-20
+=====================================================================================================
